@@ -13,6 +13,8 @@
 		748F1928290BC93B00960EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F1926290BC93B00960EFA /* Main.storyboard */; };
 		748F192A290BC93C00960EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748F1929290BC93C00960EFA /* Assets.xcassets */; };
 		748F192D290BC93C00960EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F192B290BC93C00960EFA /* LaunchScreen.storyboard */; };
+		748F1935290BC96800960EFA /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F1934290BC96800960EFA /* ImageViewController.swift */; };
+		748F1937290BC9A100960EFA /* ImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F1936290BC9A100960EFA /* ImageAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		748F1929290BC93C00960EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		748F192C290BC93C00960EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		748F192E290BC93C00960EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748F1934290BC96800960EFA /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		748F1936290BC9A100960EFA /* ImageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				748F1920290BC93B00960EFA /* AppDelegate.swift */,
 				748F1922290BC93B00960EFA /* SceneDelegate.swift */,
 				748F1924290BC93B00960EFA /* ViewController.swift */,
+				748F1934290BC96800960EFA /* ImageViewController.swift */,
+				748F1936290BC9A100960EFA /* ImageAPI.swift */,
 				748F1926290BC93B00960EFA /* Main.storyboard */,
 				748F1929290BC93C00960EFA /* Assets.xcassets */,
 				748F192B290BC93C00960EFA /* LaunchScreen.storyboard */,
@@ -140,6 +146,8 @@
 			files = (
 				748F1925290BC93B00960EFA /* ViewController.swift in Sources */,
 				748F1921290BC93B00960EFA /* AppDelegate.swift in Sources */,
+				748F1935290BC96800960EFA /* ImageViewController.swift in Sources */,
+				748F1937290BC9A100960EFA /* ImageAPI.swift in Sources */,
 				748F1923290BC93B00960EFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

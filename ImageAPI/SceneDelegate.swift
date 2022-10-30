@@ -1,9 +1,6 @@
-//
 //  SceneDelegate.swift
 //  ImageAPI
-//
-//  Created by Joy Marie on 10/28/22.
-//
+
 
 import UIKit
 
