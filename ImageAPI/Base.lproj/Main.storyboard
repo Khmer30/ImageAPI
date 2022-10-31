@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="13.043478260869566" y="93.75"/>
         </scene>
-        <!--Table View Controller-->
+        <!--My Table View Controller-->
         <scene sceneID="jbl-Pl-4yK">
             <objects>
-                <tableViewController id="gf4-jx-ASj" sceneMemberID="viewController">
+                <tableViewController id="gf4-jx-ASj" customClass="MyTableViewController" customModule="ImageAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="QCb-7d-YWc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

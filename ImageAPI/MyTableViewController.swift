@@ -1,26 +1,28 @@
 //
-//  ViewController.swift
+//  MyTableViewController.swift
 //  ImageAPI
-
+//
+//  Created by Joy Marie on 11/1/22.
+//
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class MyTableViewController: UITableViewController {
+
     var images = [ImageAPIRequest]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
     
     }
-//
-//    var urlRequest: URLRequest {
-//        var urlCompoents = URLComponents(string: "https://jsonplaceholder.typicode.com/photos")!
-//       urlCompoents.queryItems = [URLQueryItem(name: "albumId", value: "albumID"),
-//                         URLQueryItem(name: "thumbnailUrl", value: "mbnailURL")]
-//
-//        return URLRequest(url: urlCompoents.url!)
-//    }
+
+    var urlRequest: URLRequest {
+        var urlCompoents = URLComponents(string: "https://jsonplaceholder.typicode.com/photos")!
+       urlCompoents.queryItems = [URLQueryItem(name: "albumId", value: "albumID"),
+                         URLQueryItem(name: "thumbnailUrl", value: "mbnailURL")]
+
+        return URLRequest(url: urlCompoents.url!)
+    }
     
     func fetchImage(from url: URL) async throws -> UIImage {
         let (data, response) = try await URLSession.shared.data(from: url)
@@ -39,11 +41,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return image
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return images.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "showImage", for: indexPath)
         
         return cell
