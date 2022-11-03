@@ -14,7 +14,7 @@ struct ImageAPIRequest: Codable {
     let id: Int
     let title: String
     var url: String
-    let thumbnailURL: String?
+    let thumbnailURL: String
     
     enum CodingKeys: String, CodingKey {
         case albumID = "albumId"
