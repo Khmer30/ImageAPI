@@ -11,65 +11,44 @@
         <!--Image View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ImageViewController" customModule="ImageAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" id="BYZ-38-t0r" customClass="ImageViewController" customModule="ImageAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBG-U7-lOJ">
+                                <rect key="frame" x="64" y="462.5" width="350" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUP-1v-cVz">
+                                <rect key="frame" x="64" y="510" width="19.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjT-Zg-cyR">
-                                <rect key="frame" x="49" y="110" width="328" height="315"/>
+                                <rect key="frame" x="20" y="151" width="374" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="albumId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tM5-Ln-tPM">
-                                <rect key="frame" x="64" y="487" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBG-U7-lOJ">
-                                <rect key="frame" x="64" y="555" width="14" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUP-1v-cVz">
-                                <rect key="frame" x="64" y="625" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thumbnail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zog-fv-KbB">
-                                <rect key="frame" x="64" y="701" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yUP-1v-cVz" secondAttribute="trailing" symbolic="YES" id="9oR-81-N7P"/>
-                            <constraint firstItem="SBG-U7-lOJ" firstAttribute="leading" secondItem="yUP-1v-cVz" secondAttribute="leading" id="Ahs-wA-pHu"/>
-                            <constraint firstItem="yUP-1v-cVz" firstAttribute="top" secondItem="SBG-U7-lOJ" secondAttribute="bottom" constant="49" id="HDt-wK-HAR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zog-fv-KbB" secondAttribute="trailing" symbolic="YES" id="Pjd-o2-kOF"/>
-                            <constraint firstAttribute="bottom" secondItem="SBG-U7-lOJ" secondAttribute="bottom" constant="320" id="Ufp-No-Mni"/>
-                            <constraint firstItem="SBG-U7-lOJ" firstAttribute="top" secondItem="tM5-Ln-tPM" secondAttribute="bottom" constant="47" id="XSt-fy-iHq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tM5-Ln-tPM" secondAttribute="trailing" symbolic="YES" id="ahe-uK-w56"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SBG-U7-lOJ" secondAttribute="trailing" symbolic="YES" id="dcU-Ix-fGY"/>
-                            <constraint firstItem="SBG-U7-lOJ" firstAttribute="leading" secondItem="tM5-Ln-tPM" secondAttribute="leading" id="g3x-Rq-zke"/>
+                            <constraint firstAttribute="bottom" secondItem="SBG-U7-lOJ" secondAttribute="bottom" constant="413" id="12f-gc-wma"/>
+                            <constraint firstItem="SBG-U7-lOJ" firstAttribute="leading" secondItem="yUP-1v-cVz" secondAttribute="leading" id="5kP-jS-SlX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SBG-U7-lOJ" secondAttribute="trailing" symbolic="YES" id="dcU-Ix-fGY"/>
+                            <constraint firstItem="yUP-1v-cVz" firstAttribute="top" secondItem="SBG-U7-lOJ" secondAttribute="bottom" constant="27" id="kVt-WD-9rI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yUP-1v-cVz" secondAttribute="trailing" symbolic="YES" id="r1h-7j-pFL"/>
                             <constraint firstItem="SBG-U7-lOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="wRs-df-0KS"/>
-                            <constraint firstItem="Zog-fv-KbB" firstAttribute="top" secondItem="yUP-1v-cVz" secondAttribute="bottom" constant="55" id="wrX-hH-l8D"/>
-                            <constraint firstItem="Zog-fv-KbB" firstAttribute="leading" secondItem="yUP-1v-cVz" secondAttribute="leading" id="ySM-oN-NvL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tdL-3g-H4O"/>
                     <connections>
-                        <outlet property="albumIdLabel" destination="tM5-Ln-tPM" id="3W3-VI-jin"/>
-                        <outlet property="albumLabel" destination="tM5-Ln-tPM" id="FE3-Uf-kuh"/>
-                        <outlet property="idLabel" destination="SBG-U7-lOJ" id="Qd4-5F-Umc"/>
                         <outlet property="imageView" destination="xjT-Zg-cyR" id="Hf6-QI-9Ih"/>
-                        <outlet property="thumbnailLabel" destination="Zog-fv-KbB" id="2Nj-Ou-ieV"/>
-                        <outlet property="titleLabel" destination="yUP-1v-cVz" id="Kei-p9-zBn"/>
+                        <outlet property="titleLabel" destination="SBG-U7-lOJ" id="Qd4-5F-Umc"/>
+                        <outlet property="urlLabel" destination="yUP-1v-cVz" id="NMs-j6-RUd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -108,7 +87,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="photoImageView" destination="K52-Vc-Rgo" id="vlK-CR-Ijq"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showImage" id="d73-JQ-03q"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="showDetails" id="d73-JQ-03q"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

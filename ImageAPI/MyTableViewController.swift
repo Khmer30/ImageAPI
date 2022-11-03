@@ -15,7 +15,6 @@ class MyTableViewController: UITableViewController {
         super.viewDidLoad()
         let url = URL(string: "https://jsonplaceholder.typicode.com/photos")!
         Task {
-            
             do {
                let photos = try await fetchImage(from: url)
                 images = photos
@@ -24,7 +23,6 @@ class MyTableViewController: UITableViewController {
                 print(error)
             }
         }
-        
     }
     
     func fetchImage(from url: URL) async throws -> [ImageAPIRequest] {
@@ -61,7 +59,17 @@ class MyTableViewController: UITableViewController {
         return cell
     }
     
-        func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ImageViewController {
+            destination.image = images[tableView.indexPathForSelectedRow!.row]
+        }
+    }
+    
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
             URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
         }
 }

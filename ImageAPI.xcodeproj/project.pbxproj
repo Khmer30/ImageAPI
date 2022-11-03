@@ -67,11 +67,11 @@
 				749A89902910971600E31B05 /* MyTableViewController.swift */,
 				748F1934290BC96800960EFA /* ImageViewController.swift */,
 				748F1936290BC9A100960EFA /* ImageAPI.swift */,
+				743019C9291374C50090CD8D /* PhotoTableViewCell.swift */,
 				748F1926290BC93B00960EFA /* Main.storyboard */,
 				748F1929290BC93C00960EFA /* Assets.xcassets */,
 				748F192B290BC93C00960EFA /* LaunchScreen.storyboard */,
 				748F192E290BC93C00960EFA /* Info.plist */,
-				743019C9291374C50090CD8D /* PhotoTableViewCell.swift */,
 			);
 			path = ImageAPI;
 			sourceTree = "<group>";
