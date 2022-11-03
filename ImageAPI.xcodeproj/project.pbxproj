@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743019CA291374C50090CD8D /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743019C9291374C50090CD8D /* PhotoTableViewCell.swift */; };
 		748F1921290BC93B00960EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F1920290BC93B00960EFA /* AppDelegate.swift */; };
 		748F1923290BC93B00960EFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748F1922290BC93B00960EFA /* SceneDelegate.swift */; };
 		748F1928290BC93B00960EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748F1926290BC93B00960EFA /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		743019C9291374C50090CD8D /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		748F191D290BC93B00960EFA /* ImageAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748F1920290BC93B00960EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		748F1922290BC93B00960EFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				748F1929290BC93C00960EFA /* Assets.xcassets */,
 				748F192B290BC93C00960EFA /* LaunchScreen.storyboard */,
 				748F192E290BC93C00960EFA /* Info.plist */,
+				743019C9291374C50090CD8D /* PhotoTableViewCell.swift */,
 			);
 			path = ImageAPI;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				749A89912910971600E31B05 /* MyTableViewController.swift in Sources */,
 				748F1921290BC93B00960EFA /* AppDelegate.swift in Sources */,
+				743019CA291374C50090CD8D /* PhotoTableViewCell.swift in Sources */,
 				748F1935290BC96800960EFA /* ImageViewController.swift in Sources */,
 				748F1937290BC9A100960EFA /* ImageAPI.swift in Sources */,
 				748F1923290BC93B00960EFA /* SceneDelegate.swift in Sources */,

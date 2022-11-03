@@ -26,14 +26,6 @@ class MyTableViewController: UITableViewController {
         }
         
     }
-
-//    var urlRequest: URLRequest {
-//        var urlCompoents = URLComponents(string: "https://jsonplaceholder.typicode.com/photos")!
-//       urlCompoents.queryItems = [URLQueryItem(name: "albumId", value: "albumID"),
-//                         URLQueryItem(name: "thumbnailUrl", value: "mbnailURL")]
-//
-//        return URLRequest(url: urlCompoents.url!)
-//    }
     
     func fetchImage(from url: URL) async throws -> [ImageAPIRequest] {
         let (data, response) = try await URLSession.shared.data(from: url)
@@ -56,17 +48,16 @@ class MyTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "showImage", for: indexPath)
+        let cell: PhotoTableViewCell  = (tableView.dequeueReusableCell(withIdentifier: "showImage", for: indexPath) as! PhotoTableViewCell?)!
         let photo = images[indexPath.row]
 //        cell.textLabel?.text = photo.thumbnailURL
         
-        let data = getData(from: URL(string: photo.thumbnailURL)!) { data, response, error in
+        let data = getData(from: URL(string: photo.url)!) { data, response, error in
             let newImage = UIImage(data: data!)
             DispatchQueue.main.async {
-                cell.imageView?.image = newImage
+                cell.photoImageView?.image = newImage
             }
         }
-        
         return cell
     }
     
